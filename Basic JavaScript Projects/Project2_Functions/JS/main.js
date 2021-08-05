@@ -9,3 +9,8 @@ function myFunction() {
     sentence += " <3 u!";
     document.getElementById("concentrate").innerHTML = sentence;
 }
+
+function myFunction2() {
+    var sum = 4 * 3;
+    document.getElementById("demo").innerHTML = sum;
+}
