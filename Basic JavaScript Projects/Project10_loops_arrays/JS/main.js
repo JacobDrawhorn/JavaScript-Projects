@@ -56,7 +56,7 @@ let car = { //let function
     year: "2015 ",
     color: "grey ",
     description : function() {
-        return "The car is a " + this.year + this.color + this.make + this.model;
+        return "The car is a " + car.year + car.color + car.make + car.model;
         }
 };
 document.getElementById("Car_Object").innerHTML = car.description();
