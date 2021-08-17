@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $("html").append(
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic $</h1>\
+                        <p id='1'>p1</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("p").css({"color":"red"});
+        $("p").click(function() {
+            $('h1').hide();
+        });
+        $("p").click(function() {
+            console.log("You clicked a paragraph!");
+        });
+    });
+</script>
+</html>
