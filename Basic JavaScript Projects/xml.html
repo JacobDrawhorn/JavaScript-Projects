@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates text string
+            var Name = "<name>" +
+            "<first>Jacob</first>" +
+            "<last>Drawhorn</last" +
+            "</name>";
+
+            //creates XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates XML DOM object
+            XML_Document = XML_Parser.parseFromString(Name,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("first")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
